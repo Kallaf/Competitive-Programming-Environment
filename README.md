@@ -43,6 +43,6 @@ cd <path>
 
 #### The example used is a simple example where the input is 2 integers and the output is their same
 - The programs written in c/c++ and python prints the correct answer so the output on the screen should be **"Accepted"**.
-- Will java program just prints the first number (not their sum) so the output on the screen should be **"Wrong answer"**.
+- While java program just prints the first number (not their sum) so the output on the screen should be **"Wrong answer"**.
 
 ![Screenshot](https://github.com/Kallaf/Competitive-Programming-Environment/blob/master/screen%20shot.png)
