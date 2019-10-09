@@ -1,8 +1,10 @@
 #!/bin/bash
-compiler=`javac main.java`
+compiler=`javac Main.java`
 if [ -z "$compiler" ]
 then
+start=`date +%s%N`
 java Main < input > myoutput
+end=`date +%s%N`
 var=`diff myoutput output`
 if [ -z "$var" ]
 then
@@ -11,6 +13,7 @@ else
 echo Wrong answer
 echo "$var"
 fi
+echo "execution time:" "$(($((end-start))/1000000))" "ms"
 else
 echo "$comiler"
 fi
