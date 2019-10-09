@@ -1,7 +1,9 @@
 #!/bin/bash
 
 g++ main.cpp
+start=`date +%s%N`
 ./a.out < input > myoutput
+end=`date +%s%N`
 var=$(diff myoutput output)
 if [ -z "$var" ]
 then
@@ -10,4 +12,5 @@ else
 echo "Wrong answer"
 echo "$var"
 fi
+echo "execution time:" "$(($((end-start))/1000000))" "ms"
 exit 0
